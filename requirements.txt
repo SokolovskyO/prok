@@ -1,4 +1,4 @@
-anthropic
+requests
 pyperclip
 keyboard
 pystray

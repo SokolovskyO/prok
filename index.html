@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700;900&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#08080e;--surface:#0e0e18;--card:#111119;--border:rgba(255,255,255,0.07);--accent:#6c5ce7;--accent2:#fd9644;--text:#eeedf5;--sub:#8f8da6;--muted:#4e4c63}
+:root{--bg:#07100d;--surface:#0c1810;--card:#0f1c14;--border:rgba(255,255,255,0.07);--accent:#00d97e;--accent2:#00cfff;--text:#eef5f1;--sub:#8da69a;--muted:#3d5a4a}
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font-family:'Golos Text',sans-serif;overflow-x:hidden}
@@ -19,22 +19,22 @@ nav{position:fixed;top:0;left:0;right:0;height:62px;display:flex;align-items:cen
 .nav-r{display:flex;gap:28px;align-items:center}
 .nav-r a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500;transition:color .2s}
 .nav-r a:hover{color:var(--text)}
-.nav-btn{background:var(--accent)!important;color:#fff!important;padding:8px 22px!important;border-radius:7px!important;font-weight:700!important;transition:opacity .2s,transform .2s!important}
+.nav-btn{background:var(--accent)!important;color:#07100d!important;padding:8px 22px!important;border-radius:7px!important;font-weight:700!important;transition:opacity .2s,transform .2s!important}
 .nav-btn:hover{opacity:.85!important;transform:translateY(-1px)!important}
 
 .hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:110px 24px 90px;position:relative;overflow:hidden}
-.orb{position:absolute;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(108,92,231,.09) 0%,transparent 65%);top:50%;left:50%;transform:translate(-50%,-58%);pointer-events:none;animation:breathe 8s ease-in-out infinite}
+.orb{position:absolute;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(0,217,126,.09) 0%,transparent 65%);top:50%;left:50%;transform:translate(-50%,-58%);pointer-events:none;animation:breathe 8s ease-in-out infinite}
 @keyframes breathe{0%,100%{transform:translate(-50%,-58%) scale(1)}50%{transform:translate(-50%,-58%) scale(1.1)}}
-.chip{display:inline-flex;align-items:center;gap:8px;background:rgba(108,92,231,.1);border:1px solid rgba(108,92,231,.22);border-radius:100px;padding:6px 16px;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#9f96f0;margin-bottom:44px;animation:fadeUp .65s ease both}
+.chip{display:inline-flex;align-items:center;gap:8px;background:rgba(0,217,126,.1);border:1px solid rgba(0,217,126,.22);border-radius:100px;padding:6px 16px;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#7bffc5;margin-bottom:44px;animation:fadeUp .65s ease both}
 .chip-dot{width:6px;height:6px;border-radius:50%;background:var(--accent);animation:blink 2s ease infinite}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
 h1{font-family:'Unbounded',sans-serif;font-size:clamp(46px,8vw,96px);font-weight:900;line-height:.94;letter-spacing:-4px;margin-bottom:30px;animation:fadeUp .65s .1s ease both}
-h1 .grad{display:block;background:linear-gradient(110deg,var(--accent) 0%,#a29bf7 45%,var(--accent2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+h1 .grad{display:block;background:linear-gradient(110deg,var(--accent) 0%,#6bffb8 45%,var(--accent2) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .hero-p{font-size:clamp(15px,1.8vw,19px);color:var(--sub);line-height:1.72;max-width:500px;margin-bottom:52px;animation:fadeUp .65s .18s ease both}
 .hero-p strong{color:var(--text);font-weight:600}
 .btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-bottom:32px;animation:fadeUp .65s .26s ease both}
-.btn-p{background:var(--accent);color:#fff;font-family:'Golos Text',sans-serif;font-weight:700;font-size:16px;padding:14px 38px;border-radius:9px;text-decoration:none;border:none;cursor:pointer;box-shadow:0 0 52px rgba(108,92,231,.3);transition:transform .2s,box-shadow .2s}
-.btn-p:hover{transform:translateY(-2px);box-shadow:0 0 72px rgba(108,92,231,.45)}
+.btn-p{background:var(--accent);color:#07100d;font-family:'Golos Text',sans-serif;font-weight:700;font-size:16px;padding:14px 38px;border-radius:9px;text-decoration:none;border:none;cursor:pointer;box-shadow:0 0 52px rgba(0,217,126,.3);transition:transform .2s,box-shadow .2s}
+.btn-p:hover{transform:translateY(-2px);box-shadow:0 0 72px rgba(0,217,126,.45)}
 .btn-g{background:transparent;color:var(--muted);font-family:'Golos Text',sans-serif;font-weight:500;font-size:16px;padding:14px 30px;border-radius:9px;text-decoration:none;border:1px solid var(--border);cursor:pointer;transition:color .2s,border-color .2s}
 .btn-g:hover{color:var(--text);border-color:rgba(255,255,255,.2)}
 @keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
@@ -54,7 +54,7 @@ h2{font-family:'Unbounded',sans-serif;font-size:clamp(26px,3.5vw,44px);font-weig
   margin-top:52px;
   box-shadow:0 40px 80px rgba(0,0,0,.5);
 }
-.demo-box::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(108,92,231,.55),transparent)}
+.demo-box::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(0,217,126,.55),transparent)}
 .demo-bar{display:flex;align-items:center;gap:7px;padding:13px 18px;border-bottom:1px solid var(--border);background:rgba(0,0,0,.2)}
 .dot{width:10px;height:10px;border-radius:50%}
 .dot.r{background:#ff5f57}.dot.y{background:#ffbd2e}.dot.g{background:#28c840}
@@ -70,8 +70,8 @@ h2{font-family:'Unbounded',sans-serif;font-size:clamp(26px,3.5vw,44px);font-weig
   font-size:13px;font-weight:600;cursor:pointer;
   transition:all .2s;white-space:nowrap;
 }
-.tab:hover{background:rgba(108,92,231,.1);border-color:rgba(108,92,231,.25);color:var(--text)}
-.tab.active{background:rgba(108,92,231,.18);border-color:rgba(108,92,231,.5);color:#c4bdff}
+.tab:hover{background:rgba(0,217,126,.1);border-color:rgba(0,217,126,.25);color:var(--text)}
+.tab.active{background:rgba(0,217,126,.18);border-color:rgba(0,217,126,.5);color:#a0ffdb}
 
 /* text panels */
 .demo-panels{padding:20px 24px 28px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
@@ -79,7 +79,7 @@ h2{font-family:'Unbounded',sans-serif;font-size:clamp(26px,3.5vw,44px);font-weig
 .panel-lbl{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
 .panel-text{font-size:14px;line-height:1.75;color:var(--sub);min-height:80px}
 .panel.out .panel-lbl{color:var(--accent)}
-.panel.out{border-color:rgba(108,92,231,.2);background:rgba(108,92,231,.05)}
+.panel.out{border-color:rgba(0,217,126,.2);background:rgba(0,217,126,.05)}
 .panel.out .panel-text{color:var(--text)}
 
 .panel-text{transition:opacity .2s}
@@ -88,22 +88,21 @@ h2{font-family:'Unbounded',sans-serif;font-size:clamp(26px,3.5vw,44px);font-weig
 .steps{display:grid;grid-template-columns:repeat(3,1fr);margin-top:56px;border:1px solid var(--border);border-radius:14px;overflow:hidden}
 .step{padding:40px 30px;background:var(--card);border-right:1px solid var(--border);transition:background .2s}
 .step:last-child{border-right:none}
-.step:hover{background:#14141e}
-.step-n{font-family:'Unbounded',sans-serif;font-size:54px;font-weight:900;color:rgba(108,92,231,.13);line-height:1;margin-bottom:20px}
+.step:hover{background:#0d1f15}
+.step-n{font-family:'Unbounded',sans-serif;font-size:54px;font-weight:900;color:rgba(0,217,126,.13);line-height:1;margin-bottom:20px}
 .step h3{font-family:'Unbounded',sans-serif;font-size:14px;font-weight:700;letter-spacing:-.4px;margin-bottom:10px}
 .step p{color:var(--sub);font-size:14px;line-height:1.65}
-
 .feats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:56px;background:var(--border);border:1px solid var(--border);border-radius:14px;overflow:hidden}
 .feat{padding:34px 28px;background:var(--card);transition:background .2s}
-.feat:hover{background:#14141e}
-.fico{width:40px;height:40px;background:rgba(108,92,231,.1);border:1px solid rgba(108,92,231,.18);border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:18px;margin-bottom:16px}
+.feat:hover{background:#0d1f15}
+.fico{width:40px;height:40px;background:rgba(0,217,126,.1);border:1px solid rgba(0,217,126,.18);border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:18px;margin-bottom:16px}
 .feat h3{font-family:'Unbounded',sans-serif;font-size:13px;font-weight:700;letter-spacing:-.3px;margin-bottom:8px}
 .feat p{color:var(--sub);font-size:13px;line-height:1.65}
 
 .pricing-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:56px;max-width:660px}
 .pcard{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:34px 28px;transition:border-color .25s,transform .25s}
-.pcard:hover{border-color:rgba(108,92,231,.3);transform:translateY(-3px)}
-.pcard.hot{border-color:rgba(108,92,231,.32)}
+.pcard:hover{border-color:rgba(0,217,126,.3);transform:translateY(-3px)}
+.pcard.hot{border-color:rgba(0,217,126,.32)}
 .hot-label{font-size:10px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
 .p-name{font-family:'Unbounded',sans-serif;font-size:15px;font-weight:700;margin-bottom:12px}
 .p-price{font-family:'Unbounded',sans-serif;font-size:40px;font-weight:900;letter-spacing:-2px;line-height:1;margin-bottom:6px}
@@ -114,7 +113,7 @@ h2{font-family:'Unbounded',sans-serif;font-size:clamp(26px,3.5vw,44px);font-weig
 .p-list li{font-size:13px;color:var(--sub);display:flex;gap:9px;align-items:flex-start}
 .p-list li::before{content:'✓';color:var(--accent);font-weight:700;flex-shrink:0;margin-top:1px}
 .p-btn{display:block;text-align:center;text-decoration:none;padding:12px;border-radius:8px;font-weight:700;font-size:14px;transition:opacity .2s,transform .2s}
-.p-btn.a{background:var(--accent);color:#fff}
+.p-btn.a{background:var(--accent);color:#07100d}
 .p-btn.o{border:1px solid var(--border);color:var(--sub)}
 .p-btn:hover{opacity:.85;transform:translateY(-1px)}
 
@@ -128,7 +127,7 @@ h2{font-family:'Unbounded',sans-serif;font-size:clamp(26px,3.5vw,44px);font-weig
 .fi.open .fq-icon{transform:rotate(45deg)}
 
 .cta-box{margin-top:80px;background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:72px 52px;text-align:center;position:relative;overflow:hidden}
-.cta-box::before{content:'';position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(108,92,231,.1) 0%,transparent 65%);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none}
+.cta-box::before{content:'';position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(0,217,126,.1) 0%,transparent 65%);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none}
 .cta-box h2,.cta-box p,.cta-box .btns{position:relative}
 .cta-box p{color:var(--sub);font-size:17px;max-width:440px;margin:0 auto 40px;line-height:1.65}
 .cta-box .btns{margin-bottom:0}
@@ -140,6 +139,11 @@ footer p{color:var(--muted);font-size:13px}
 .ft-links{display:flex;gap:24px}
 .ft-links a{color:var(--muted);font-size:13px;text-decoration:none;transition:color .2s}
 .ft-links a:hover{color:var(--sub)}
+
+/* ── FOREST ── */
+.forest{position:absolute;bottom:0;left:0;right:0;height:140px;pointer-events:none;overflow:hidden}
+.forest svg{width:100%;height:100%;display:block}
+.forest-mist{position:absolute;bottom:0;left:0;right:0;height:80px;background:linear-gradient(to top,rgba(7,16,13,.95),transparent);pointer-events:none}
 
 @media(max-width:768px){
   nav{padding:0 20px}
@@ -162,7 +166,6 @@ footer p{color:var(--muted);font-size:13px}
   <div class="nav-r">
     <a href="#demo">Демо</a>
     <a href="#how">Как работает</a>
-    <a href="#pricing">Цены</a>
     <a href="https://github.com/SokolovskyO/prok" class="nav-btn" target="_blank">GitHub</a>
   </div>
 </nav>
@@ -174,6 +177,51 @@ footer p{color:var(--muted);font-size:13px}
   <p class="hero-p">Quick появляется в любом приложении когда ты выделяешь текст.<br><strong>Перевод, орфография, запятые, перефраз</strong> — одним нажатием.</p>
   <div class="btns">
     <a href="#demo" class="btn-g">Смотреть демо →</a>
+  </div>
+  <div class="forest">
+    <svg viewBox="0 0 1440 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- дальний план — светлее -->
+      <polygon points="0,140 40,80 80,140" fill="#0d2318" opacity=".7"/>
+      <polygon points="60,140 110,55 160,140" fill="#0a1e14" opacity=".7"/>
+      <polygon points="130,140 170,75 210,140" fill="#0d2318" opacity=".7"/>
+      <polygon points="190,140 240,48 290,140" fill="#0a1e14" opacity=".7"/>
+      <polygon points="260,140 300,68 340,140" fill="#0d2318" opacity=".7"/>
+      <polygon points="320,140 370,42 420,140" fill="#0a1e14" opacity=".7"/>
+      <polygon points="390,140 430,70 470,140" fill="#0d2318" opacity=".7"/>
+      <polygon points="450,140 500,50 550,140" fill="#0a1e14" opacity=".7"/>
+      <polygon points="520,140 560,72 600,140" fill="#0d2318" opacity=".7"/>
+      <polygon points="580,140 630,44 680,140" fill="#0a1e14" opacity=".7"/>
+      <polygon points="650,140 690,68 730,140" fill="#0d2318" opacity=".7"/>
+      <polygon points="710,140 760,46 810,140" fill="#0a1e14" opacity=".7"/>
+      <polygon points="780,140 820,72 860,140" fill="#0d2318" opacity=".7"/>
+      <polygon points="840,140 890,50 940,140" fill="#0a1e14" opacity=".7"/>
+      <polygon points="910,140 950,66 990,140" fill="#0d2318" opacity=".7"/>
+      <polygon points="970,140 1020,44 1070,140" fill="#0a1e14" opacity=".7"/>
+      <polygon points="1040,140 1080,70 1120,140" fill="#0d2318" opacity=".7"/>
+      <polygon points="1100,140 1150,48 1200,140" fill="#0a1e14" opacity=".7"/>
+      <polygon points="1170,140 1210,74 1250,140" fill="#0d2318" opacity=".7"/>
+      <polygon points="1230,140 1280,46 1330,140" fill="#0a1e14" opacity=".7"/>
+      <polygon points="1300,140 1340,68 1380,140" fill="#0d2318" opacity=".7"/>
+      <polygon points="1360,140 1400,52 1440,140" fill="#0a1e14" opacity=".7"/>
+      <!-- ближний план — темнее -->
+      <polygon points="0,140 50,90 100,140" fill="#071510"/>
+      <polygon points="80,140 140,60 200,140" fill="#051210"/>
+      <polygon points="170,140 220,85 270,140" fill="#071510"/>
+      <polygon points="240,140 310,52 380,140" fill="#051210"/>
+      <polygon points="350,140 400,80 450,140" fill="#071510"/>
+      <polygon points="420,140 490,56 560,140" fill="#051210"/>
+      <polygon points="530,140 580,86 630,140" fill="#071510"/>
+      <polygon points="600,140 670,54 740,140" fill="#051210"/>
+      <polygon points="710,140 760,82 810,140" fill="#071510"/>
+      <polygon points="780,140 850,50 920,140" fill="#051210"/>
+      <polygon points="890,140 940,84 990,140" fill="#071510"/>
+      <polygon points="960,140 1030,55 1100,140" fill="#051210"/>
+      <polygon points="1070,140 1120,80 1170,140" fill="#071510"/>
+      <polygon points="1140,140 1210,52 1280,140" fill="#051210"/>
+      <polygon points="1250,140 1300,88 1350,140" fill="#071510"/>
+      <polygon points="1320,140 1380,60 1440,140" fill="#051210"/>
+    </svg>
+    <div class="forest-mist"></div>
   </div>
 </section>
 
@@ -238,7 +286,7 @@ footer p{color:var(--muted);font-size:13px}
   <div class="wrap">
     <p class="lbl">Возможности</p>
     <h2>Всё что нужно<br>с текстом — здесь</h2>
-    <p class="s-sub">Quick работает на мощи Claude AI. Понимает контекст, не ломает стиль.</p>
+    <p class="s-sub">Quick работает на мощи GLM-5. Понимает контекст, не ломает стиль.</p>
     <div class="feats">
       <div class="feat"><div class="fico">🌐</div><h3>Перевод</h3><p>На русский или английский. Сохраняет стиль и тон оригинала.</p></div>
       <div class="feat"><div class="fico">✏️</div><h3>Орфография</h3><p>Исправляет ошибки не меняя смысл и структуру текста.</p></div>
@@ -252,7 +300,7 @@ footer p{color:var(--muted);font-size:13px}
 
 <div class="div"></div>
 
-<section id="pricing">
+<section id="pricing" style="display:none">
   <div class="wrap">
     <p class="lbl">Цены</p>
     <h2>Просто и честно</h2>
@@ -284,8 +332,8 @@ footer p{color:var(--muted);font-size:13px}
     <p class="lbl">Вопросы</p>
     <h2>Часто спрашивают</h2>
     <div class="faq">
-      <div class="fi"><button class="fq">Нужны ли технические знания для установки? <span class="fq-icon">+</span></button><div class="fa">Нет. Скачиваешь архив, запускаешь ЗАПУСТИТЬ.bat — программа сама установит всё. В тарифе Про API-ключ уже встроен.</div></div>
-      <div class="fi"><button class="fq">Это безопасно? Мои тексты куда-то уходят? <span class="fq-icon">+</span></button><div class="fa">Тексты отправляются только в Anthropic API. Anthropic не хранит данные для обучения без согласия. Quick не собирает никакой статистики.</div></div>
+      <div class="fi"><button class="fq">Нужны ли технические знания для установки? <span class="fq-icon">+</span></button><div class="fa">Нет. Скачиваешь архив, запускаешь ЗАПУСТИТЬ.bat — программа сама установит всё необходимое.</div></div>
+      <div class="fi"><button class="fq">Это безопасно? Мои тексты куда-то уходят? <span class="fq-icon">+</span></button><div class="fa">Тексты отправляются на сервер Quick и обрабатываются через GLM-5. Quick не собирает никакой статистики и не хранит твои тексты.</div></div>
       <div class="fi"><button class="fq">В каких приложениях работает? <span class="fq-icon">+</span></button><div class="fa">В любых приложениях Windows — браузерах, Word, Excel, Telegram, Notion, VS Code и т.д. Если в приложении можно выделить текст — Quick там работает.</div></div>
       <div class="fi"><button class="fq">Можно ли отменить подписку? <span class="fq-icon">+</span></button><div class="fa">Да, в любой момент. После отмены тариф Про остаётся активным до конца оплаченного периода.</div></div>
     </div>
